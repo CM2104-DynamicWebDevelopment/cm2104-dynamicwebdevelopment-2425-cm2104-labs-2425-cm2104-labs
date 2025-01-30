@@ -5,18 +5,5 @@ app.get('/', function(req,res){
 })
 app.get('/test',function(req,res){
     res.send("second route");
-    var knockknock = require('knock-knock-jokes');
-
- res.writeHead(200, {'Content-Type': 'text/html'});
-var randomJoke = knockknock()
- res.end(randomJoke);
 })
-
-var knockknock = require('knock-knock-jokes');
-
- res.writeHead(200, {'Content-Type': 'text/html'});
-var randomJoke = knockknock()
- res.end(randomJoke);
-
-
 app.listen(8080);
