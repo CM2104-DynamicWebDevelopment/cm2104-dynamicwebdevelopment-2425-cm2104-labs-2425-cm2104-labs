@@ -12,11 +12,11 @@ app.get('/add',function(req,res){
     res.send("X+Y="+(x+y));
 });
 app.get('/calc',function(req,res){
-    var x = req.query.x;
-    var y = req.query.y;
+    var x = parseInt(req.query.x);
+    var y = parseInt(req.query.y);
     var operator =req.query.operator;
     if(operator === "add"){
-        res.send(x+"+"+y+"="+ x+y);
+        res.send(x+"+"+y+"="+ (x+y));
     }else if(operator === "sub"){
         res.send(x+"-"+y+"="+ x-y);
     }else if(operator === "div"){
