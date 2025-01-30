@@ -31,7 +31,5 @@ app.get('/joke',function(req,res){
     var randomJoke = knockknock()
     res.end(randomJoke);
 });
-
-        
-    
+   
 app.listen(8080);
