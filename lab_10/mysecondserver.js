@@ -1,10 +1,10 @@
 
 var http = require('http');
-
+var currentdate = require('./mymodule');
 http.createServer(function (req, res) {
 //yo
  res.writeHead(200, {'Content-Type': 'text/html'});
+ res.write("The date and time are currently: " + currentdate.myDateTime())
  res.end('Hello World!');
-
-//triaiu
+ 
 }).listen(8080);
