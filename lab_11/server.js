@@ -25,6 +25,11 @@ app.get('/calc',function(req,res){
         res.send(x+"*"+y+"="+ x*y);
 }
 });
+app.get('/joke',function(req,res){
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    var randomJoke = knockknock()
+    res.end(randomJoke);
+});
 
         
     
